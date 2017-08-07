@@ -1,0 +1,7 @@
+#!/bin/sh
+
+./preprocess_data_2.py \
+    --src_path /Volumes/Untitled/mac/Data/patchy-san/datasets/reddit_subreddit_10K.graph \
+    --dst_dir_path /Volumes/Untitled/mac/Data/patchy-san/datasets/for_graph_tool/reddit_subreddit_10K \
+    --dst_label_path /Volumes/Untitled/mac/Data/patchy-san/datasets/for_graph_tool/reddit_subreddit_10K/labels.pkl
+

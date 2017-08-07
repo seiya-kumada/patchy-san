@@ -1,0 +1,8 @@
+#!/bin/sh
+
+./test_channels.py
+./test_data_preprocessor.py
+./test_receptive_field_maker.py
+./test_cnn.py
+./test_dataset.py                 
+./test_receptive_field_maker_2.py

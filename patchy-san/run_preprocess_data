@@ -1,0 +1,11 @@
+#!/bin/sh
+
+./preprocess_data.py \
+        --src_dir_path /Volumes/Untitled/mac/Data/graphml/data_graphml/NCI1 \
+        --dst_dir_path /Volumes/Untitled/mac/Data/graphml/data_graphml/preprocessed/NCI1 \
+        --node_sequence_size 30 \
+        --receptive_field_size 10 \
+        --num_channels 1 \
+        --kind 0 \
+        --channels_module_name channels_for_mutag
+

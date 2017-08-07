@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		885B2FD01E6BE9B900CB75A9 /* NautyGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885B2FCE1E6BE9B900CB75A9 /* NautyGraph.cpp */; };
+		885B2FD11E6BE9B900CB75A9 /* NautyGraph.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 885B2FCF1E6BE9B900CB75A9 /* NautyGraph.hpp */; };
+		A29CCB301E690E3C00974EE8 /* nauty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29CCB2F1E690E3C00974EE8 /* nauty.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		885B2FCE1E6BE9B900CB75A9 /* NautyGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NautyGraph.cpp; path = ../../nauty_class/nauty_class/NautyGraph.cpp; sourceTree = "<group>"; };
+		885B2FCF1E6BE9B900CB75A9 /* NautyGraph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = NautyGraph.hpp; path = ../../nauty_class/nauty_class/NautyGraph.hpp; sourceTree = "<group>"; };
+		A29CCB1D1E690C1D00974EE8 /* libnauty_graph.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libnauty_graph.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29CCB2F1E690E3C00974EE8 /* nauty.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = nauty.a; path = ../../../../../../usr/local/nauty26r7/lib/nauty.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A29CCB1A1E690C1D00974EE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29CCB301E690E3C00974EE8 /* nauty.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A29CCB141E690C1C00974EE8 = {
+			isa = PBXGroup;
+			children = (
+				A29CCB2F1E690E3C00974EE8 /* nauty.a */,
+				A29CCB1F1E690C1D00974EE8 /* nauty_graph */,
+				A29CCB1E1E690C1D00974EE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A29CCB1E1E690C1D00974EE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A29CCB1D1E690C1D00974EE8 /* libnauty_graph.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A29CCB1F1E690C1D00974EE8 /* nauty_graph */ = {
+			isa = PBXGroup;
+			children = (
+				885B2FCE1E6BE9B900CB75A9 /* NautyGraph.cpp */,
+				885B2FCF1E6BE9B900CB75A9 /* NautyGraph.hpp */,
+			);
+			path = nauty_graph;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A29CCB1B1E690C1D00974EE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885B2FD11E6BE9B900CB75A9 /* NautyGraph.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A29CCB1C1E690C1D00974EE8 /* nauty_graph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29CCB281E690C1D00974EE8 /* Build configuration list for PBXNativeTarget "nauty_graph" */;
+			buildPhases = (
+				A29CCB191E690C1D00974EE8 /* Sources */,
+				A29CCB1A1E690C1D00974EE8 /* Frameworks */,
+				A29CCB1B1E690C1D00974EE8 /* Headers */,
+				A29CCB311E690ECA00974EE8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nauty_graph;
+			productName = nauty_graph;
+			productReference = A29CCB1D1E690C1D00974EE8 /* libnauty_graph.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A29CCB151E690C1C00974EE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = kumada;
+				TargetAttributes = {
+					A29CCB1C1E690C1D00974EE8 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = A29CCB181E690C1C00974EE8 /* Build configuration list for PBXProject "nauty_graph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A29CCB141E690C1C00974EE8;
+			productRefGroup = A29CCB1E1E690C1D00974EE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A29CCB1C1E690C1D00974EE8 /* nauty_graph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A29CCB311E690ECA00974EE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mv \\\n    ${CONFIGURATION_BUILD_DIR}/lib${PRODUCT_NAME}.dylib \\\n    ${CONFIGURATION_BUILD_DIR}/lib${PRODUCT_NAME}.so";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A29CCB191E690C1D00974EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885B2FD01E6BE9B900CB75A9 /* NautyGraph.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A29CCB261E690C1D00974EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A29CCB271E690C1D00974EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A29CCB291E690C1D00974EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"UNIT_TEST=0",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include/,
+					/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Headers,
+					/usr/local/nauty26r7/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib,
+					/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib,
+					/usr/local/nauty26r7/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-lboost_python-mt",
+					"-lpython2.7",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A29CCB2A1E690C1D00974EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"UNIT_TEST=0",
+					"BOOST_PYTHON=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include/,
+					/opt/local/Library/Frameworks/Python.framework/Versions/2.7/Headers,
+					/usr/local/nauty26r7/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib,
+					/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib,
+					/usr/local/nauty26r7/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-lboost_python-mt",
+					"-lpython2.7",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A29CCB181E690C1C00974EE8 /* Build configuration list for PBXProject "nauty_graph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29CCB261E690C1D00974EE8 /* Debug */,
+				A29CCB271E690C1D00974EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29CCB281E690C1D00974EE8 /* Build configuration list for PBXNativeTarget "nauty_graph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29CCB291E690C1D00974EE8 /* Debug */,
+				A29CCB2A1E690C1D00974EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A29CCB151E690C1C00974EE8 /* Project object */;
+}

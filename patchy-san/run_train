@@ -1,0 +1,28 @@
+#!/bin/bash
+
+dir=NCI1
+arr=("fold_0" "fold_1" "fold_2" "fold_3" "fold_4" "fold_5" "fold_6" "fold_7" "fold_8" "fold_9")
+for e in ${arr[@]}; do
+    echo ${e}
+    ./train.py \
+            --root_dir_path      /home/ubuntu/data/patchy_san/preprocessed/${dir} \
+            --label_path         /home/ubuntu/data/patchy_san/${dir}.label \
+            --label_offset       0 \
+            --training_data_path /home/ubuntu/data/patchy_san/preprocessed/${dir}/${e}/train.txt \
+            --testing_data_path  /home/ubuntu/data/patchy_san/preprocessed/${dir}/${e}/test.txt \
+            --out_dir_path       /home/ubuntu/results/patchy_san/${dir}/${e} \
+            --conv1_output_channels 16 \
+            --conv2_output_channels 8 \
+            --fc_output_size 128 \
+            --conv2_ksize 5 \
+            --test_batch_size 10 \
+            --gpu 0 \
+            --model_epoch 1 \
+            --dropout_ratio 0.5 \
+            --batch_size 70 \
+            --epoch 70 
+done
+
+./calculate_average_accuracy.py \
+        --root_dir_path /home/ubuntu/results/patchy_san/${dir}/ \
+        --fold_num 10 

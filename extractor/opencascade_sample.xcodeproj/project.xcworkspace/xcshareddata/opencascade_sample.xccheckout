@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>95F7CC12-A869-467B-B3CA-27471F61A9AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>opencascade_sample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C6660B5A62609267E7B56C7E6BF06821F211E9ED</key>
+		<string>https://cct-inc.backlog.jp/git/IMAGE_SEARCHER/topology-retrieval.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>extractor/opencascade_sample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C6660B5A62609267E7B56C7E6BF06821F211E9ED</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://cct-inc.backlog.jp/git/IMAGE_SEARCHER/topology-retrieval.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6660B5A62609267E7B56C7E6BF06821F211E9ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6660B5A62609267E7B56C7E6BF06821F211E9ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>topology-retrieval</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+./check_graph.py \
+    --src_path /Volumes/Untitled/mac/Data/patchy-san/datasets/proteins.graph
+
+ 

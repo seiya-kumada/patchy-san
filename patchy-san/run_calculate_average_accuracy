@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./calculate_average_accuracy.py \
+        --root_dir_path /home/ubuntu/results/patchy_san/mutag/ \
+        --fold_num 1 

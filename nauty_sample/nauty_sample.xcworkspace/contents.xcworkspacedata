@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:nauty_graph/nauty_graph.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:nauty_class/nauty_class.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:nauty_sample/nauty_sample.xcodeproj">
+   </FileRef>
+</Workspace>

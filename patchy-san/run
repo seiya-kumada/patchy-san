@@ -1,0 +1,19 @@
+#!/bin/sh
+
+./train.py \
+        --root_dir_path /home/ubuntu/data/patchy_san/preprocessed/DD \
+        --label_path /home/ubuntu/data/patchy_san/DD.label \
+        --label_offset 0 \
+        --training_data_path /home/ubuntu/data/patchy_san/preprocessed/DD/fold_0/train.txt \
+        --testing_data_path /home/ubuntu/data/patchy_san/preprocessed/DD/fold_0/test.txt \
+        --out_dir_path /home/ubuntu/results/patchy_san/DD/fold_0 \
+        --batch_size 9 \
+        --dropout_ratio 0.5 \
+        --conv1_output_channels 16 \
+        --conv2_output_channels 28 \
+        --fc_output_size 896 \
+        --conv2_ksize 3 \
+        --test_batch_size 59 \
+        --gpu 0 \
+        --model_epoch 1 \
+        --epoch 100
