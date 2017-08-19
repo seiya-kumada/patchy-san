@@ -60,29 +60,29 @@ class CnnInPatchySanTest(unittest.TestCase):
         self.assertTrue(np.all(y.shape == (batch_size, out_channels, 1, node_size)))
         self.assertTrue(np.all(31 == y.data))
 
-    def test_conv2(self):
-        out_channels = 3
-        rf_size = 5
-        ksize = (1, rf_size)
-        in_channels = 2
-        initial_w = np.ones((out_channels, in_channels, ksize[0], ksize[1])).astype(np.float32)
-        initial_w[:, 0, :, :] = 2 * initial_w[:, 0, :, :]
-        initial_w[:, 1, :, :] = 3 * initial_w[:, 1, :, :]
-        initial_bias = np.ones((out_channels)).astype(np.float32)
-        model = cnn.CnnInPatchySan(
-            conv2_ksize=rf_size,
-            conv2_output_channels=out_channels,
-            conv2_initial_w=initial_w,
-            conv2_initial_bias=initial_bias
-        )
-        batch_size = 1
-        node_size = 100
+    # def test_conv2(self):
+    #     out_channels = 3
+    #     rf_size = 5
+    #     ksize = (1, rf_size)
+    #     in_channels = 2
+    #     initial_w = np.ones((out_channels, in_channels, ksize[0], ksize[1])).astype(np.float32)
+    #     initial_w[:, 0, :, :] = 2 * initial_w[:, 0, :, :]
+    #     initial_w[:, 1, :, :] = 3 * initial_w[:, 1, :, :]
+    #     initial_bias = np.ones((out_channels)).astype(np.float32)
+    #     model = cnn.CnnInPatchySan(
+    #         conv2_ksize=rf_size,
+    #         conv2_output_channels=out_channels,
+    #         conv2_initial_w=initial_w,
+    #         conv2_initial_bias=initial_bias
+    #     )
+    #     batch_size = 1
+    #     node_size = 100
 
-        x = np.ones((batch_size, in_channels, 1, node_size)).astype(np.float32)
-        y = model.conv2(x)
-        output_node_size = (node_size - rf_size) / 1 + 1
-        self.assertTrue(np.all(y.shape == (batch_size, out_channels, 1, output_node_size)))
-        self.assertTrue(np.all(26 == y.data))
+    #     x = np.ones((batch_size, in_channels, 1, node_size)).astype(np.float32)
+    #     y = model.conv2(x)
+    #     output_node_size = (node_size - rf_size) / 1 + 1
+    #     self.assertTrue(np.all(y.shape == (batch_size, out_channels, 1, output_node_size)))
+    #     self.assertTrue(np.all(26 == y.data))
 
     def test_fc1(self):
         third_fc_output_size = 13
