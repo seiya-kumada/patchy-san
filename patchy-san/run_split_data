@@ -3,5 +3,5 @@
 ./split_data.py \
         --graph_dir_path /home/ubuntu/data/patchy_san/preprocessed/NCI1 \
         --label_path     /home/ubuntu/data/patchy_san/NCI1.label \
-        --split_num 10
+        --split_num 10 
 

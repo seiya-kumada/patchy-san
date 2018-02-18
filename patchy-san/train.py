@@ -108,7 +108,7 @@ if __name__ == "__main__":
         train = dataset.Dataset(training_data_path, root_dir_path, args.label_offset)
         test = dataset.Dataset(testing_data_path, root_dir_path, args.label_offset)
 
-        train_iter = chainer.iterators.MultiprocessIterator(train, args.batch_size, n_processes=args.loader_job)
+        train_iter = chainer.iterators.MultiprocessIterator(train, args.batch_size, n_processes=args.loader_job, shuffle=True)
         test_iter = chainer.iterators.MultiprocessIterator(test, args.test_batch_size, repeat=False,
                                                            n_processes=args.loader_job)
 
@@ -116,9 +116,9 @@ if __name__ == "__main__":
 
         print("# _/_/_/ set up an optimizer _/_/_/")
 
-        # optimizer = chainer.optimizers.MomentumSGD(lr=0.0001, momentum=0.9)
-        optimizer = chainer.optimizers.Adam()
-        # optimizer = chainer.optimizers.RMSprop(lr=0.0001)
+        # optimizer = chainer.optimizers.MomentumSGD(lr=0.0001, momentum=0.97)
+        # optimizer = chainer.optimizers.Adam()
+        optimizer = chainer.optimizers.RMSprop(lr=0.001)
         optimizer.setup(model)
 
         print("# _/_/_/ set up a trainer _/_/_/")
@@ -130,7 +130,7 @@ if __name__ == "__main__":
         model_epoch = (1 if args.test else args.model_epoch), 'epoch'
 
         trainer.extend(TestModeEvaluator(test_iter, model, device=args.gpu), trigger=log_interval)
-        # trainer.extend(extensions.ExponentialShift('lr', 0.99), trigger=model_epoch)
+        trainer.extend(extensions.ExponentialShift('lr', 0.99), trigger=model_epoch)
 
         # Save two plot images to the result dir
         trainer.extend(

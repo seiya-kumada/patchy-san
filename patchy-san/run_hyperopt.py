@@ -78,6 +78,6 @@ if __name__ == '__main__':
             EPOCH_SIZE: hp.quniform(EPOCH_SIZE, 10, 50, 10),
         },
         algo=tpe.suggest,
-        max_evals=1)
+        max_evals=50)
 
     print(best)

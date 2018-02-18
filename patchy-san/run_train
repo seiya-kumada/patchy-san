@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dir=NCI1
-arr=("fold_0" "fold_1" "fold_2" "fold_3" "fold_4" "fold_5" "fold_6" "fold_7" "fold_8" "fold_9")
+arr=("fold_0")  #  "fold_1"  "fold_2" #  "fold_3" "fold_4" "fold_5" "fold_6" "fold_7" "fold_8" "fold_9")
 for e in ${arr[@]}; do
     echo ${e}
     ./train.py \
@@ -14,15 +14,15 @@ for e in ${arr[@]}; do
             --conv1_output_channels 16 \
             --conv2_output_channels 8 \
             --fc_output_size 128 \
-            --conv2_ksize 5 \
+            --conv2_ksize 10 \
             --test_batch_size 10 \
             --gpu 0 \
             --model_epoch 1 \
             --dropout_ratio 0.5 \
-            --batch_size 70 \
-            --epoch 70 
+            --batch_size 10 \
+            --epoch 100
 done
 
 ./calculate_average_accuracy.py \
         --root_dir_path /home/ubuntu/results/patchy_san/${dir}/ \
-        --fold_num 10 
+        --fold_num 1 
