@@ -42,7 +42,7 @@ class DataPreprocessor(object):
         self.channels.set_graph(graph)
 
         # calculate centrality and make it to be vertex properties
-        bv, ev = graph_tool.centrality.betweenness(graph)
+        bv = graph_tool.centrality.closeness(graph)
         graph.vp['betweenness'] = graph.new_vertex_property('double')
         graph.vp.betweenness = bv
 

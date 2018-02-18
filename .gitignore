@@ -99,3 +99,14 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.DS_Store
+nauty_sample/.DS_Store
+nauty_sample/DerivedData/
+nauty_sample/nauty_class/.DS_Store
+nauty_sample/nauty_class/nauty_class.xcodeproj/xcuserdata/ 
+nauty_sample/nauty_sample.xcworkspace/xcuserdata/
+nauty_sample/nauty_sample/nauty_sample.xcodeproj/xcuserdata/ 
+patchy-san/hoge.py
+nauty_sample/nauty_graph/nauty_graph.xcodeproj/xcuserdata/
+

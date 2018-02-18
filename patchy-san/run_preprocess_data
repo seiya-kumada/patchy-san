@@ -2,7 +2,7 @@
 
 ./preprocess_data.py \
         --src_dir_path /Volumes/Untitled/mac/Data/graphml/data_graphml/NCI1 \
-        --dst_dir_path /Volumes/Untitled/mac/Data/graphml/data_graphml/preprocessed/NCI1 \
+        --dst_dir_path /Volumes/Untitled/mac/Data/graphml/data_graphml/preprocessed/NCI1_closeness \
         --node_sequence_size 30 \
         --receptive_field_size 10 \
         --num_channels 1 \

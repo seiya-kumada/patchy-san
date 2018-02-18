@@ -41,7 +41,7 @@ def load_graph_(path):
         print('[VALID]: {}'.format(path))
         return graph
     else:
-        print('[ERROR] invalid file name: {}'.format(path))
+        # print('[ERROR] invalid file name: {}'.format(path))
         return None
 
 
