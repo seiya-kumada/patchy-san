@@ -1,0 +1,48 @@
+
+(1) installation of nauty
+
+First, you have to install “nauty.”
+Reference sites:
+	http://users.cecs.anu.edu.au/~bdm/nauty/
+	http://pallini.di.uniroma1.it/
+	http://pallini.di.uniroma1.it/Guide.html
+
+I installed nauty on 2017/01.
+My procedures of installation were as follows.
+
+Download source files from http://pallini.di.uniroma1.it/#howtogetit
+Then, 
+———————————————————————
+$> pwd
+/Users/seiya_kumada/BuildSpace/nauty26r7
+$> ./configure --prefix=/usr/local/nauty26r7
+$> make
+$> make checks
+…
+./genrang -r3 114 100 | ./countg --nedDr -q  nautestc.ans  OK
+./gentourng -q -z 8 | ./pickg -T3  nautestd.ans  OK
+./gentreeg -q -s 18 | ./countg -z6 --o  nauteste.ans  OK
+./geng -c -q 8 8 | ./directg -q -o | ./converseg -q | ./labelg -q  nautestf.ans  OK
+./genbg -q 4 3 10 | ./vcolg -m6 -T  nautestg.ans  OK
+ 
+PASSED ALL TESTS
+———————————————————————
+
+After making, you will find execution files, object files, source files, and user guide in the directory ‘nauty26r7’. You have to copy the execution file to your favorite place.
+
+
+(2) make libnauty_graph.so
+
+$> git clone https://github.com/seiya-kumada/patchy-san.git
+$> cd patchy-san/nauty_sample
+$> mkdir lib
+$> mkdir -p obj/nauty_class/nauty_class
+$> make
+There is the Makefile that I wrote in this directory.
+
+(3) description in config/settings.conf
+
+You have to write the following lines in config/settings.conf.
+ 
+[settings]
+libnauty_graph_path = <path to libnauty_graph.so>

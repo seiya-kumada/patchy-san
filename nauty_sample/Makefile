@@ -4,7 +4,7 @@ SRCS = $(SRCDIR)/NautyGraph.cpp
 	 
 OBJSDIR = ./obj
 
-CXX = g++-4.9
+CXX = g++
 
 EXE = ./lib/libnauty_graph.so
 
